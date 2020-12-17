@@ -6,7 +6,7 @@ import { Cases } from './cases';
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
 };
-const apiUrl = 'http://localhost:3000/api';
+const apiUrl = 'https://my-json-server.typicode.com/rajarajan-kumar/myjson/api';
 
 @Injectable({
   providedIn: 'root'
