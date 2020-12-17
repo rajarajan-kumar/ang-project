@@ -1,0 +1,56 @@
+<div class="example-container mat-elevation-z8">
+    <h2>Corona Virus Cases Details</h2>
+    <div class="example-loading-shade"
+         *ngIf="isLoadingResults">
+      <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+    </div>
+    <div class="button-row">
+      <a mat-flat-button color="primary" [routerLink]="['/cases']"><mat-icon>list</mat-icon></a>
+    </div>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title><h2>{{cases.name}}</h2></mat-card-title>
+        
+      </mat-card-header>
+      <mat-card-content>
+        <table>
+            <tr>
+                <td>Age</td>
+                <td>:</td>
+                <td>{{cases.age}} year old</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>:</td>
+                <td>{{cases.gender}}</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>:</td>
+                <td>{{cases.address}}</td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>:</td>
+                <td>{{cases.city}}</td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>:</td>
+                <td>{{cases.country}}</td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td>:</td>
+                <td>{{cases.status}}</td>
+            </tr>
+       
+        </table>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-flat-button color="primary" [routerLink]="['/edit-cases', cases.id]"><mat-icon>edit</mat-icon> Case</a>
+        <a mat-flat-button color="warn" (click)="deleteCases(cases.id)"><mat-icon>delete</mat-icon> Case</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  

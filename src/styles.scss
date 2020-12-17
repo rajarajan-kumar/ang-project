@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a.mat-focus-indicator.mat-flat-button.mat-button-base.mat-primary {
+    background: #3F51B5;
+    color: #fff;
+}
+a.mat-focus-indicator.mat-flat-button.mat-button-base.mat-accent {
+    background: #9C27B0;
+    color: #fff;
+}
+a.mat-focus-indicator.mat-flat-button.mat-button-base.mat-warn {
+    background: red;
+    color: #fff;
+}
